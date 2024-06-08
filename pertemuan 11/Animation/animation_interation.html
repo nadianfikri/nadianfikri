@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div#myDiv1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightslategray;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example1 {
+  0%   {background-color:blue; left:0px; top:0px;}
+  25%  {background-color:black; left:200px; top:0px;}
+  50%  {background-color:white; left:200px; top:200px;}
+  75%  {background-color: lightcoral; left:0px; top:200px;}
+  100% {background-color:lightseagreen; left:0px; top:0px;}
+}
+
+div#myDiv2 {
+  width: 100px;
+  height: 100px;
+  background-color: limegreen;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+  0%   {background-color: aquamarine; left:0px; top:0px;}
+  25%  {background-color: antiquewhite; left:200px; top:0px;}
+  50%  {background-color:azure; left:200px; top:200px;}
+  75%  {background-color: bisque; top:200px;}
+  100% {background-color: blueviolet; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>animasi interaction</p>
+
+<div id="myDiv1"></div>
+
+<h1>CSS Animation</h1>
+
+<p>animasi interaction</p>
+
+<div id="myDiv2"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div#mydiv1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(30, 0, 255);
+  position: relative;
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example1 {
+  0%   {background-color: aquamarine; left:0px; top:0px;}
+  25%  {background-color: antiquewhite; left:200px; top:0px;}
+  50%  {background-color:azure; left:200px; top:200px;}
+  75%  {background-color: bisque; top:200px;}
+  100% {background-color: blueviolet; left:0px; top:0px;}
+}
+
+div#mydiv2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+@keyframes myfirst {
+  0%   {background-color:blue; left:0px; top:0px;}
+  25%  {background-color:black; left:200px; top:0px;}
+  50%  {background-color:white; left:200px; top:200px;}
+  75%  {background-color: lightcoral; left:0px; top:200px;}
+  100% {background-color:lightseagreen; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>animasi 1</p>
+
+<div id="mydiv1"></div>
+
+<p>animasi 2</p>
+
+<div id="mydiv2"></div>
+
+</body>
+</html>

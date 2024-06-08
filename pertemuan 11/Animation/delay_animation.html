@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div#myDiv1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(47, 0, 255);
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example1 {
+  0%   {background-color:rgb(0, 255, 234); left:0px; top:0px;}
+  25%  {background-color:rgb(0, 128, 255); left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:rgb(0, 30, 128); left:0px; top:200px;}
+  100% {background-color:rgb(255, 0, 221); left:0px; top:0px;}
+}
+div#myDiv2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 110);
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example2 {
+  0%   {background-color:rgb(0, 255, 221); left:0px; top:0px;}
+  25%  {background-color:rgb(0, 255, 8); left:200px; top:0px;}
+  50%  {background-color:rgb(0, 255, 157); left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:rgb(38, 255, 0); left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>properti animasi delay 1</p>
+
+<div id="myDiv1"></div>
+
+<h1>CSS Animation</h1>
+
+<p>properti animasi delay 2</p>
+
+<div id="myDiv2"></div>
+
+</body>
+</html>
