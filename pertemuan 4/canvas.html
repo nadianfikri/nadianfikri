@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canvas HTML Example</title>
+</head>
+<body>
+
+    <p>Pilih gambar yang akan di-render:</p>
+    <!-- Image 1 -->
+    <img id="myImage1" src="https://i.ibb.co/M6NbtNW/images-1.jpg" alt="images-1" border="0">
+    <button onclick="renderImage('https://i.ibb.co/M6NbtNW/images-1.jpg', 'myCanvas')">Render Image 1</button>
+    
+    <!-- Image 2 -->
+    <img id="myImage2" src="https://i.ibb.co/p253t39/images.jpg" alt="images" border="0">
+    <button onclick="renderImage('https://i.ibb.co/p253t39/images.jpg', 'myCanvas2')">Render Image 2</button>
+
+    <canvas id="myCanvas" width="640" height="480" style="border:1px solid #000000;"></canvas>
+    <canvas id="myCanvas2" width="640" height="480" style="border:1px solid #000000;"></canvas>
+
+    <script type="text/javascript">
+        function renderImage(imageUrl, canvasId) {
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+
+            var img = new Image();
+                        
+            img.src = imageUrl;
+
+            img.onload = function() {
+                var width = img.width;
+                var height = img.height
+
+                var canvasWidth = canvas.width;
+                var canvasHeight = canvas.height;
+
+                var scale = Math.min(canvasWidth / width, canvasHeight / height);
+
+                var newWidth = width * scale;
+                var newHeight = height * scale;
+
+                var x = (canvasWidth - newWidth) / 2;
+                var y = (canvasHeight - newHeight) / 2;
+
+                ctx.drawImage(img, x, y, newWidth, newHeight);
+            };
+        }
+    </script>
+
+</body>
+</html>
