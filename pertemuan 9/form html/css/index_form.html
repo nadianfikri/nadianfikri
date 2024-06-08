@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Umbrella corporation</title>
+    <link rel="stylesheet" type="text/css" href="style_form.css">
+</head>
+<body>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Biodata pribadi bro</legend>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="">
+            <label for="Alamat">Alamat:</label>
+            <input type="text" id="Alamat" name="Alamat" placeholder="">
+            <label for="Tanggal_lahir">Hari Tanggal lahir:</label>
+            <input type="date" id="Tanggal_lahir" name="Tanggal_lahir">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="flex: 1; margin-right: 10px;">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <select id="jenis-kelamin" name="jenis_kelamin">
+                        <option value="lk">Laki-laki</option>
+                        <option value="pr">Perempuan</option>
+                        <option value="rahasia" disabled>Rahasia</option>
+                    </select>
+                </div>
+                <div style="flex: 1; margin-left: 10px;">
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Buddha</option>
+                    </select>
+                </div>
+            </div>
+            <label for="hobi">Hobi:</label>
+            <select id="hobi" name="hobi">
+                <option value="memancing">Memancing</option>
+                <option value="berkebun">Berkebun</option>
+                <option value="membaca">Membaca</option>
+                <option value="menulis">Menulis</option>
+                <option value="bersepeda">Bersepeda</option>
+            </select>
+            <label for="motivasi">Motivasi:</label>
+            <input type="text" id="motivasi" name="motivasi" placeholder="Masukkan motivasi Anda">
+            <div class="parent">
+                <button type="submit" class="button-custom">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
