@@ -1,0 +1,16 @@
+div {
+    float: left;
+    padding: 15px; 
+  }
+  
+  .div1 {
+    background: rgb(40, 105, 89);
+  }
+  
+  .div2 {
+    background: rgb(82, 73, 128);
+  }
+  
+  .div3 {
+    background: rgb(121, 146, 121);
+  }
