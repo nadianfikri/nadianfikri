@@ -1,62 +1,86 @@
-.overlay{
-    position:absolute;
-    top:0;
-    left:0;
+.navbar-header {
+    font-size: 1.5rem; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 767.98px) {
+    .navbar-toggler {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  
+    .navbar-brand {
+      width: calc(100% - 60px);
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+  
+@media (max-width: 768px) {
+    .navbar-header {
+        font-size: 1.2rem; 
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ffc107;
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(00,00,00,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-#home-content{
-    position:relative;
-    min-height:300px;
+#home-content, #video, #about-content, #courses-content, #contact-content {
+    position: relative;
+    min-height: 300px;
     min-width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+#home-content {
     background-image: url("./img/bg1.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:50% 50px;
-    text-align: center;
-    color:white
+    background-position: 50% 50px;
 }
-#video{
-    position:relative;
-    min-height:200px;
-    min-width: 100%;
-    background-image: url("./img/med.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:0-100px;
-    text-align: center;
-    color:white
 
+#video {
+    min-height: 200px;
+    background-image: url("./img/med.jpg");
+    background-position: 0 -100px;
 }
-#about-content{
-    position:relative;
-    min-height:300px;
-    min-width: 100%;
+
+#about-content {
     background-image: url("./img/about.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:l0 top;
-    color:white
+    background-position: 0 top;
 }
-#courses-content{
-    position:relative;
-    min-height:300px;
-    min-width: 100%;
+
+#courses-content {
     background-image: url("./img/course.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:l0 50%;
-    color:white
+    background-position: 0 50%;
 }
-#contact-content{
-    position:relative;
-    min-height:300px;
-    min-width: 100%;
+
+#contact-content {
     background-image: url("./img/bg-contact.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:l0 top;
-    color:white
+    background-position: 0 top;
 }
